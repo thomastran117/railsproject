@@ -67,12 +67,7 @@ PORT=8060
 # Databases
 ##############################################
 
-DATABASE_URL="mysql://root:password123@localhost:3306/schoolspace"
-DATABASE_HOST="localhost"
-DATABASE_PORT=3306
-DATABASE_PASSWORD="password123"
-DATABASE_NAME="schoolspace"
-DATABASE_USER="root"
+DATABASE_URL=postgres://postgres:postgres@localhost:5432/hrapp
 REDIS_URL="redis://127.0.0.1:6379"
 RABBITMQ_URL="amqp://guest:guest@localhost:5672"
 

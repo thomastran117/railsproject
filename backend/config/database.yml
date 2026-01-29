@@ -1,18 +1,14 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  url: <%= EnvManager.db_url %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: hrapp
 
 test:
   <<: *default
-  database: hrapp_test
 
 production:
   <<: *default
-  database: hrapp_production
-  username: backend
-  password: <%= ENV["BACKEND_DATABASE_PASSWORD"] %>
